@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin: none;
+    padding: none;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-weight: 500;
+}
+
+.calc-container {
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(4, 1fr);
+    align-content: center;
+    gap: 15px;
+    width: 20%;
+    margin: auto;
+}
+
+.calc-container > div {
+    border-radius: 50%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.screen {
+    border-radius: 0px !important;
+    color: white;
+    grid-column: span 4;
+}
+
+#del-span-two {
+    border-radius: 30px;
+    grid-column: span 2;
+    background-color: #9f9f9f;
+    color: black;
+    text-align: left;
+    padding-left: 20px;
+}
+
+#del-span-two:hover {
+    background-color: #b7b3b3;
+    cursor: pointer;
+}
+
+#zero-span-two {
+    border-radius: 30px;
+    grid-column: span 2;
+    background-color: #313131;
+    color: white;
+    text-align: left;
+    padding-left: 20px;
+}
+
+#zero-span-two:hover {
+    background-color: hsla(0, 0%, 100%, 0.442);
+    cursor: pointer;
+}
+
+.number {
+    background-color: #313131;
+    color: white;
+}
+
+.number:hover {
+    background-color: hsla(0, 0%, 100%, 0.442);
+    cursor: pointer;
+}
+
+.operand {
+    background-color: #f59806;
+    color: white;
+}
+
+.operand:hover {
+    background-color: hsl(37, 81%, 55%);
+    cursor: pointer;
+}
+
+.all-clear {
+    background-color: #9f9f9f;
+    color: black;
+}
+
+.all-clear:hover {
+    background-color: #b7b3b3;
+    cursor: pointer;
+}
